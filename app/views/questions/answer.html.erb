@@ -1,0 +1,29 @@
+
+
+<div class="card m-5 p-2 shadow p-1 mb-5 bg-body-tertiary rounded">
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote">
+        <p><%= params[:question] %></p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        You
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="card m-5 p-2 shadow p-1 mb-5 bg-body-tertiary rounded">
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote">
+        <p><%= @answer %></p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Your Coach
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<p button type="button" class="btn btn-warning card m-5"><%= link_to style= "Ask new question", ask_path,  {:style=>'text-decoration:none'}%></p>
